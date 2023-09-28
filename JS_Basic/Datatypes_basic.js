@@ -61,3 +61,30 @@ console.log(typeof marvels)  //here if check the data type of "myObj" it shows "
 // Object (native and does not implement [[Call]])	= "object"
 // Object (native or host and does implement [[Call]]) =	"function"
 // Object (host and does not implement [[Call]]) =	Implementation-defined except may not be "undefined", "boolean", "number", or "string".
+
+
+// Memories types and working of Memories
+// Two types of memory 
+// 1. Stack : use in Primitive data type. In this type it is actually call by value means if we make change of varible then actual value remains same because in this we got the copy of varible means duplicate so if we make changes the actual value remains same
+let a = 4
+let b=a
+console.log(b)  //here b=4 because value of a goes into b
+b=8             //Now we change value of b. Is value of "a" gets change or not because  "b=a"
+console.log(b)  // Here b=8 because previous line of code
+console.log(a)  // But here value of "a" remains same i.e 4 because of call by value 
+
+
+// 2. Heap : use in Non-Primitive data type
+
+let usr1 =
+{
+    uname: "jarvis@gmail.com",
+    UPI: "jatrvis@paytm"   
+}
+console.log(usr1.uname);  //here we use ". dot" operator to acces the element of object
+ let usr2 = usr1
+ 
+ usr1.uname= "edith@gmail.com"
+
+ console.log(usr1.uname);  //The Uname gets change in both usr1 and usr2
+ console.log(usr2.uname);  //the value gets change in both because of call by refrence
