@@ -30,3 +30,34 @@ console.log(id === idsec); // it is false
 // 2. Objects
 // 3. Functions
  
+const marvels = ["Iroman, Captain, Thor, Natasha"];     //array data type
+
+
+let myObj =     //here we creat object as varible by writing "let" keyword and myObj as var name other waise we can declair Object without creating varible
+{
+    name: "Tony_stark",    //in obj we write in key value pairs, 
+    age: 35,                //Object is present in "{}" braceses and data type may 
+}                           //And all data types can exist in Object means Number, Boolean, String, Function and even another object
+
+//function declaration
+//In JS function can b treated as varible like object by declairing varible with let keyword
+
+const myFun = function()
+{
+    console.log("Hellow Jarvis")
+}
+
+
+console.log(typeof marvels)  //here if check the data type of "myObj" it shows "object" but if we check the datatype of myFun it shows function and we should know all "non primitive" data types are object datatype then why function shows function data type because it jus shows function actualy it is "Function Object"
+
+
+// All Data type value and return
+
+// Undefined =	"undefined"
+// Null =	"object"
+// Boolean =	"boolean"
+// Number =	"number"
+// String =	"string"
+// Object (native and does not implement [[Call]])	= "object"
+// Object (native or host and does implement [[Call]]) =	"function"
+// Object (host and does not implement [[Call]]) =	Implementation-defined except may not be "undefined", "boolean", "number", or "string".
