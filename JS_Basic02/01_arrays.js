@@ -31,4 +31,19 @@ console.log(typeof newArray);  //Check data type i.e string
 
 //Slice, Splice
 console.log("A ", myArray);  //simply display array but withname i.e A
-const newArray2 = myArray.slice(1, 3)  //we creat newArray2 which equals to myArray with and another operation "slice()" it returns a section of array means a pictular part of array depedent in which value provided as an argument i.e 1,3 which means it incledes ist and second elements
+const newArray2 = myArray.slice(1, 3)  //we creat newArray2 which equals to myArray with and another operation "slice()" it returns a section of array means a pictular part of array depedent on, which value provided as an argument i.e 1,3 Actually this argument indecates the index number of array here argument is 1,3 means index number 1-3 displays except index number 3rd ie(2, 3) is an Output.
+
+console.log(newArray2);    //Output: 2, 3
+
+console.log("B ", myArray); //here "B" with "myArray" is an actual array ie [1,2,3,4,5,6] it is jus display to know is any effect on actual Array with "Sclice" or not but here their will no effect on actual Array. Sclice jus returns a section of array depedent on index number range. 
+
+const newArray3 = myArray.splice(1, 3)  //Splice operation
+
+console.log("C", myArray)    //with this it changes the whole actual array it removes all elements which are in range (which we passing as an argument) means at index number 1,2,3 elements are removed and other elements are present
+console.log(newArray3);
+
+
+//To know more methods of Array use console in browser and write.
+// const myArray=[1,2,3,4]  press enter
+// then write myArray
+//Ayyar displays and click on small aero and we get number of methods
