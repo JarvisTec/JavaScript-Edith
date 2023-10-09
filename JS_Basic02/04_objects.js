@@ -72,39 +72,72 @@ const obj3 = {...obj1, ...obj2}
 const users =
 [
     {
-        id: 01,
+        id: 1,
         email: "jarvisnet@gmail.com"
     },
     {
-        id: 01,
+        id: 1,
         email: "jarvis112@gmail.com"
     },
     {
-        id: 01,
+        id: 1,
         email: "jarvis123@gmail.com"
     },
     {
-        id: 01,
+        id: 1,
         email: "jarvi121@gmail.com"
     }
 ]
 
 users[1].id
-console.log(user1)
+// console.log(user1)
 
-console.log(Object.keys(user1))
+// console.log(Object.keys(user1))
 //by this we get the array keys of object "user1" keys are "Id, Name, Login"
 //same we get values of these keys jus write "values" insted of "keys"
-console.log(Object.values(user1))
+// console.log(Object.values(user1))
 
-console.log(Object.entries(user1))
+// console.log(Object.entries(user1))
 //it provide us each key with values in array like ['id', '121a']
 
 //if we use loops in an objects and we are access any value, or we can say value of any property but if that property does not exist their then their is lot of change of to crash. so we ned to know is that property exist or not for this we use.
 
-console.log(user1.hasOwnProperty('id'))
+// console.log(user1.hasOwnProperty('id'))
 //if exists the value is true otherwise false
 
 
 //to know more abt Objects in browser open console tab an write " const obj1 = {1:"c", 2:"d"} " hit enter and write "obj1" hit enter click small error and get number of methods
 
+
+//DeStructring of an object
+const course =
+{
+    coursename : "Web Degsing",
+    price : "300",
+    instructor : "jarvis"
+}
+//now if we know the course name then we write
+// console.log(course.coursename)
+//But if we write this value more times then we need to write this code again and again to avoide this we use Destructor.
+//Now we can display value by using distructor
+const {coursename} = course     
+console.log(coursename)    
+//jus write coursename not cource.courcename
+//And if we think that coursename is too large then we can write
+const {coursename: cName} = course
+console.log(cName)
+//now we use cName insted of coursename
+//This is called distructring of an Object
+//In JS React we also use Destructor of Object like 
+// const navbar = (props.company) =>
+// {
+//     elements of an Obj
+// }
+// navbar (company = "Edith")
+
+// using Destructor we use {} insted of props 
+// const navbar = ({company}) =>
+// {
+//     elements of an Obj
+// }
+// navbar (company = "Edith")
