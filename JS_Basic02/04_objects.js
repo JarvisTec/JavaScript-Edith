@@ -120,7 +120,8 @@ const course =
 // console.log(course.coursename)
 //But if we write this value more times then we need to write this code again and again to avoide this we use Destructor.
 //Now we can display value by using distructor
-const {coursename} = course     
+const {coursename} = course    
+// course ia an object
 console.log(coursename)    
 //jus write coursename not cource.courcename
 //And if we think that coursename is too large then we can write
@@ -136,8 +137,13 @@ console.log(cName)
 // navbar (company = "Edith")
 
 // using Destructor we use {} insted of props 
-// const navbar = ({company}) =>
+//  const navbar = ({company}) =>
 // {
-//     elements of an Obj
+//      elements of an Obj
 // }
 // navbar (company = "Edith")
+
+
+
+// ****************************************
+// Note: Read Must Intro API and inside this read JSON 
