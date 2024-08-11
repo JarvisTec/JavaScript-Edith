@@ -13,7 +13,7 @@ Myfun()
 // Function add two numbers
 
 // function addnum(num1, num2)  //here we pass 2 vales as in parameters
-// {
+//
 //     console.log(num1 + num2);
 // }
 
@@ -89,5 +89,22 @@ lgnmsg("Jarvis")
 console.log(lgnmsg());
 
 // Here we can ise conditional statement to check is any value pass as arguments
+
+
+
+
+
+
+// Creat functions to take number of values or pass number of values like in shopping cart where user add number of items having different price ehic is added also
+
+
+function cartitem(item1)
+{
+    return item1
+}
+
+console.log(item1(2));
+
+
 
 
