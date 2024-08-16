@@ -54,7 +54,7 @@ const user =
 
 // if we use "this" keyword outside th object like 
 
-console.log(this);
+// console.log(this);
 
 //this shows empty object {}  because their is no global object but when we use "this" keyword in an object it show value because "this" is used in locally
 
@@ -72,11 +72,58 @@ console.log(this);
 
 
 
-function edith()
+
+// function edith()
+// {
+//     let username = "jarvis"
+//     console.log(this.username);
+    
+// }
+// edith() 
+
+// it shows undefined because "this" keyword is not working in function it jus work in objects 
+
+
+
+
+// AeroFunctions
+
+const marvels = () =>        //this is the way to declare AeroFunction without "function"
 {
     let username = "jarvis"
-    console.log(this.username);
+    console.log(this);
     
 }
-edith() 
-// it shows undefined because "this" keyword is not working in function it jus work in objects 
+// marvels()    //"this" is not also used in aero functions
+
+
+
+
+
+// Declaration of aero functions is
+() => {}    //this is an aero function but if we put this in any varible
+
+
+
+// const addnum = (num1, num2) => 
+// {
+//     return num1 + num2
+// }
+// console.log(addnum(5, 9));
+
+
+
+
+// Implesit Return Function type: this is used without carly braces {} and defnication section writen in same single line like:
+
+// here we are not using "return" keyword because it agrees you are returing some value this is called implesit method without "{}" carley braces and without "return" keyword
+
+// but in explict we use "{}" carley braces and "return" keyword
+
+// const addnum = (num1, num2) => num1 + num2
+
+const addnum = (num1, num2) => (num1 + num2)    //2nd way of same method using simple braces
+
+    console.log(addnum(5, 9));
+
+// if we use "{}" in function then use return without "{}" not need to use "return" keyword 
