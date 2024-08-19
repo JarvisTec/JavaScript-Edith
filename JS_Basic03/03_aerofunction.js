@@ -126,4 +126,22 @@ const addnum = (num1, num2) => (num1 + num2)    //2nd way of same method using s
 
     console.log(addnum(5, 9));
 
+
 // if we use "{}" in function then use return without "{}" not need to use "return" keyword 
+
+
+
+
+// function by returing an object by aero function
+
+const obj = (num1, num2) => ({username: "Jarvis"})
+
+console.log(obj(5, 9))
+
+
+
+// function by returing an array by aero 
+
+const arr = (num1, num2) => ([1, 2, 3, 4, 5, 6])
+
+console.log(arr(5, 9))
