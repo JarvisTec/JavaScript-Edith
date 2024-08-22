@@ -18,15 +18,15 @@ let tempature = 55
 
 //if else statement
 
-if (tempature < 50)    //if condition is true code excutes if not then code doesn't excute
-{
-    console.log("tempature is lessthan 50");
+// if (tempature < 50)    //if condition is true code excutes if not then code doesn't excute
+// {
+//     console.log("tempature is lessthan 50");
     
-}
-else
-{
-    console.log("tempature is greaterthan 50");
-}
+// }
+// else
+// {
+//     console.log("tempature is greaterthan 50");
+// }
 
 
 
@@ -82,3 +82,30 @@ let marks = 750
  {
     console.log("You are faill");
  }
+
+
+
+
+//if statement check multiple conditions
+
+let username = true
+let password = true
+//here we are checking two conditions boath must be true because we use AND operator and we can use also third condition Like:
+
+// if(username && password && another_condition)
+if (username && password)     
+{
+   console.log("You are loged in sucessfully");
+}
+
+
+
+// 2nd way to check multiple conditions by "OR (||)" operator in thius we give 2 conditions anyone must be true and here we can also check number of conditions
+
+let phno = true
+let email = false
+
+if (phno || email) 
+{
+   console.log("you are loged in");
+}
