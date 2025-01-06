@@ -53,8 +53,59 @@ for (const i of map_name)
     // but we want to print sepred these keys and vaslues then use like this
 for (const [key, value] of map_name) 
     {
-    console.log(key, ':', value);
+    // console.log(key, ':', value);
     }
 
 
-    // for of loop not working on Objects because objects are not ittratable 
+    // for of loop not working on Objects because objects are not ittratable so we use for in loop
+
+    // for in used on Objects
+
+    const myObj =
+    {
+        'Name': "Jarvis",
+        'Age': "26",
+        'Gender': "male",
+        'PhNo': "123456789"
+    }
+
+for (const key in myObj)    //by this it shows jus keys not values
+    {
+        // console.log(key);  
+    }
+
+for (const key in myObj)    //by this it shows keys and values
+{
+    // console.log(key,":", myObj[key]);  
+}
+
+
+for (const key in myObj)    //by this it shows keys and values
+{
+    // console.log(`the value of ${key} is,":", ${myObj[key]}`);  
+}
+
+
+
+// for in with Array 
+
+const arr = ["HTML", "CSS", "JS", "REACT"]
+for (const key in arr)    //objects have keys but arrays have also keys ie index num     
+    {
+        // console.log(key);  //it prints only keys 
+    }
+
+
+
+//in this it prints only value of array
+for (const key in arr)    //it prints keys and value of array     
+    {
+        // console.log(arr[key]);  
+    }
+
+    
+//it prints keys and value of array
+for (const key in arr)    //it prints keys and value of array     
+    {
+        console.log(key, ":", arr[key]);  
+    }

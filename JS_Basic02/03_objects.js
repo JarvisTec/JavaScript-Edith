@@ -38,7 +38,7 @@ const user1 =
 // user1.email = "edithnet@gmail.com";  //email can't be changed because freez()
 // console.log(user1)  
 
-//Add function inObject as key/ element of an Object. and these functions are treat as simple varible.
+//Add function in Object as key element of an Object. and these functions are treat as simple varible.
 
 user1.greeting = function()
 {
