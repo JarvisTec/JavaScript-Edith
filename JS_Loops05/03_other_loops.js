@@ -27,7 +27,6 @@ for (const i of str)
     // but in Maps repeated values are not printed
   
 
-
     // Syntax of maps
     // const map_name = new Map            map_name may be anything
     // map_name.set('key', "value")
@@ -109,3 +108,6 @@ for (const key in arr)    //it prints keys and value of array
     {
         console.log(key, ":", arr[key]);  
     }
+
+
+// for in loop can not work on map because it is not irrtable\
