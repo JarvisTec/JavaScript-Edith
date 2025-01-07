@@ -25,6 +25,7 @@ for (const i of str)
 
     // Maps:   this is object datatype where we store keys and values but in other datatypes like Array, String, Objects etc if we entere duplicate values means if we enter same values they print all values even it is repeat.
     // but in Maps repeated values are not printed
+    // it is not irrtable   
   
 
     // Syntax of maps
@@ -110,4 +111,4 @@ for (const key in arr)    //it prints keys and value of array
     }
 
 
-// for in loop can not work on map because it is not irrtable\
+// for in loop can not work on map because it is not irrtable
