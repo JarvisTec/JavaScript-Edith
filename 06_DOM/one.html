@@ -5,9 +5,29 @@
     <title>DOM</title>
 </head>
 <body>
-    <div class="">
-        <h1>DOM starting</h1>
+    <div>
+        <h1 id="title" class="DOM1">Document Object Module</h1>
+        <p>Lorem ipsum dolor sit amet,</p> 
     </div>
+
     
+    <script>
+        // change style in webpage by JS like here change background
+        document.getElementById('title').style.background='teal'
+        // another way to chnge style 
+        const title = document.getElementById('title')
+        title.style.color = 'red'
+    </script>
 </body>
 </html>
+
+
+//Note for best exprience we mut use browser console to know all about the DOM like how we target any elemen or to grt some elements by its id, class name or by any attributr eg.
+<!-- in console write
+ document.getElementById('enter id which you want to access')
+ document.getElementByClass('enter class name which you want to access') 
+ and if you want to know the element/attribute name the write
+ document.getElementById('Id_Name').id / classNme
+ document.getElementById('Id_Name').getAttribute('class / Id')
+ Now if we set new attribute or add another attribute then write
+ document.getElementById('Id_Name').setAttribute('class / Id')-->
