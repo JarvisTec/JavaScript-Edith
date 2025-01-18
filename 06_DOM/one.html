@@ -8,6 +8,17 @@
     <div>
         <h1 id="title" class="DOM1">Document Object Module</h1>
         <p>Lorem ipsum dolor sit amet,</p> 
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+
+        <h3>List </h2>
+        <ul>
+            <li>one</li>
+            <li>Two</li>
+            <li>three</li>
+            <li>Four</li>
+        </ul>
     </div>
 
     
@@ -17,17 +28,28 @@
         // another way to chnge style 
         const title = document.getElementById('title')
         title.style.color = 'red'
+
+
+
+        document.querySelector('ul').style.background='teal'
     </script>
 </body>
 </html>
 
 
-//Note for best exprience we mut use browser console to know all about the DOM like how we target any elemen or to grt some elements by its id, class name or by any attributr eg.
+<!-- Note for best exprience we mut use browser console to know all about the DOM like how we target any elemen or to grt some elements by its id, class name or by any attributr eg. -->
 <!-- in console write
  document.getElementById('enter id which you want to access')
  document.getElementByClass('enter class name which you want to access') 
  and if you want to know the element/attribute name the write
- document.getElementById('Id_Name').id / classNme
+ document.getElementById('Id_Name').id_name
  document.getElementById('Id_Name').getAttribute('class / Id')
  Now if we set new attribute or add another attribute then write
- document.getElementById('Id_Name').setAttribute('class / Id')-->
+ document.getElementById('Id_Name').setAttribute('class / Id')
+ 
+when we select some pictualr area by query selectors like id, class_name, tag_name but it have two types of query_selector.   1. querySelector 2. querySelectorall
+
+ document.querySelector('selector_name') 
+ but selector_name must start with it's symbole eg id = '. dot' class_name = '#'
+ by this querySelector it selects ist element like we select element h2 but if their are number of h2 it jus select ist h2
+ -->
