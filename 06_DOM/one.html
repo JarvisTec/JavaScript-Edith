@@ -19,6 +19,7 @@
             <li>three</li>
             <li>Four</li>
         </ul>
+        <input type="password">
     </div>
 
     
@@ -30,8 +31,30 @@
         title.style.color = 'red'
 
 
+        document.querySelector('h2')  //we have number of h2 but it select ist h2
 
-        document.querySelector('ul').style.background='teal'
+        const txt = document.querySelector('h2')   //here we select a query and make it var
+        txt.style.color="red"       //here by usic var we can change any property
+
+
+        // now if we want to select input type password then we can select 
+        document.querySelector('input[type="password"]')
+
+
+
+        //if we want to do some changes in ul the we can do by this way by creating varible or without varibles
+
+        document.querySelector('ul')       //here we select whole ul
+
+        const uol = document.querySelector('ul')    //make var of perivious line
+
+        uol.querySelector('li')    //by this list of ul is selected 
+
+        const list = uol.querySelector('li')  //here we make var and store previous line 
+
+        list.style.background="teal"  // by this ist option of list background is changed
+        
+
     </script>
 </body>
 </html>
