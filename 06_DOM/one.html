@@ -53,7 +53,24 @@
         const list = uol.querySelector('li')  //here we make var and store previous line 
 
         list.style.background="teal"  // by this ist option of list background is changed
+
+
+        // Now querySelectorAll : it selects all items of li
+        document.querySelectorAll('li')   //selects all items of li
+
+        //it gives a NodeList like array example we have 4 items in <ul><li> it gives us index num of items of li 0,1,2,3 depedent upon length of items in li 
+
+        const allli = document.querySelectorAll('li')
+
+        //so if we want to change items of list but it gives NodeList (array) of items of li so we need to specify which one we want to change item whose index is '0' or '1' or '2' etc
         
+        allli[1].style.color='red'
+        
+        // so this NodeList is given by querySelectorAll wch looks like array but not an array
+
+        // querySelectorAll() ON h2
+       const head = document.querySelectorAll('h2')
+       head[1].style.color="orange"
 
     </script>
 </body>
@@ -75,4 +92,9 @@ when we select some pictualr area by query selectors like id, class_name, tag_na
  document.querySelector('selector_name') 
  but selector_name must start with it's symbole eg id = '. dot' class_name = '#'
  by this querySelector it selects ist element like we select element h2 but if their are number of h2 it jus select ist h2
+ 
+ 
+ // Now querySelectorAll: in this selector it selects all queries like in querySelector if we select list like 
+ document.querySelector('li')
+ it jus selects the ist items of li not all items of li but querySelectorAll selects all items of li
  -->
