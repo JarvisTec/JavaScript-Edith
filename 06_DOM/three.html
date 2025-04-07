@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node List</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const div = document.createElement('div')   
+    //here we creat div element without creating in HTML
+
+    console.log(div);    //here to check is div element are created & what is inside div
+    
+    //we creat div and now we can set number of attributes like className, Id etc like
+    
+    div.className = "main"
+    div.id = "main1"
+    div.id = Math.random()   //it also set id name in numbers but gives random num_val
+
+    //set style in this div
+    div.style.backgroundColor = "red"
+    div.style.padding = "20px"
+
+
+    //Rememberer this div can't display in page because this div is currently in memory not attached in page.This can be attached when we give command to document to attach this.
+
+    // div.innerHTML = "Jarvis_Tech"   //this isa also to tect but we use nother way
+
+    //code to attach div
+
+    const txt = document.createTextNode("Jarvis_Tec")
+    div.appendChild(txt)
+    document.body.appendChild(txt)
+
+
+    
+</script>
+
+</html>
