@@ -1,0 +1,30 @@
+*
+{
+    align-items: center;
+    text-align: center;
+}
+.button
+{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+#grey
+{
+    background: grey;
+}
+#red
+{
+    background: red;
+}
+#yellow
+{
+    background: yellow;
+}
+#green
+{
+    background: green;
+}
